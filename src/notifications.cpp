@@ -11,9 +11,9 @@ QColor Notifications::colorForType(Notifications::NotificationType type)
 {
     switch (type) {
     case Error:
-        return QColor("#e74c3c");
+        return QColor("#c0392b");
     case Succes:
-        return QColor("#2ecc71");
+        return QColor("#7dc5b2");
     case Generic:
     default:
         return QColor("#3498db");

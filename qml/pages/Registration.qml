@@ -49,6 +49,11 @@ FocusScope {
 
                     inputMethodHints: Qt.ImhNoPredictiveText
 
+                    onAccepted: {
+                        if (text !== "")
+                            textFieldLastName.forceActiveFocus()
+                    }
+
                     onTextChanged: {
                         if (text === "")
                             missingInformation = true
@@ -65,6 +70,11 @@ FocusScope {
                     placeholderText: "Last Name"
 
                     inputMethodHints: Qt.ImhNoPredictiveText
+
+                    onAccepted: {
+                        if (text !== "")
+                            textFieldEmail.forceActiveFocus()
+                    }
 
                     onTextChanged: {
                         if (text === "")
@@ -83,6 +93,11 @@ FocusScope {
                 placeholderText: "Email"
 
                 inputMethodHints: Qt.ImhEmailCharactersOnly
+
+                onAccepted: {
+                    if (text !== "")
+                        textFieldVisiting.forceActiveFocus()
+                }
 
                 onTextChanged: {
                     if (text === "")
@@ -107,6 +122,8 @@ FocusScope {
                     else
                         missingInformation = false
                 }
+
+                onAccepted: buttonAccept.clicked()
             }
 
             Item {
@@ -120,6 +137,8 @@ FocusScope {
                 spacing: 50
 
                 Button {
+                    id: buttonAccept
+
                     property var requiredFields: [textFieldFirstName, textFieldLastName, textFieldEmail, textFieldVisiting]
 
                     width: 500

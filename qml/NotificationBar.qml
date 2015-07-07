@@ -17,6 +17,11 @@ Rectangle {
         color = Notifications.colorForType(type)
         timerClose.interval = duration
 
+        if (type === Notifications.Succes)
+            labelMessage.color = "#34495e"
+        else
+            labelMessage.color = "#fcfcfc"
+
         if (duration === Notifications.Infinite)
             return
 

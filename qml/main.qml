@@ -79,6 +79,8 @@ ApplicationWindow {
                 id: registrationPage
 
                 Pages.Registration {
+                    onAccepted: stackView.pop()
+                    onRejected: stackView.pop()
                 }
             }
         }

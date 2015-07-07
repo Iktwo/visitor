@@ -38,11 +38,19 @@ ApplicationWindow {
 
         scale: Math.min(parent.height / height, parent.width / width)
 
-        FocusScope {
+        NotificationBar {
+            id: notificationBar
+
             anchors {
                 top: parent.top; topMargin: ScreenValues.statusBarHeight
-                /// TODO: ask orientation and ask if nav bar is actually visible
-                /// it might not be in devices with hardware controls
+            }
+
+            width: 2560
+        }
+
+        FocusScope {
+            anchors {
+                top: notificationBar.bottom
                 bottom: parent.bottom; bottomMargin: ScreenValues.navBarVisible ? ScreenValues.navigationBarHeight : 0
                 left: parent.left
                 right: parent.right

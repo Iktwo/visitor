@@ -3,20 +3,29 @@ import QtQuick.Controls 1.4
 import QtQuick.Controls.Styles 1.4
 
 TextFieldStyle {
-    background: Rectangle {
+    id: root
+
+    property color borderColor: "#7DC5B2"
+
+    background: Item {
         implicitWidth: 200
         implicitHeight: 120
 
-        color: "#bbfdfdfd"
-        radius: 20
+        Rectangle {
+            anchors {
+                bottom: parent.bottom
+                left: parent.left
+                right: parent.right
+            }
 
-        border {
-            color: "#333333"
-            width: 1
+            height: parent.height * 0.05
+            color: root.borderColor
         }
     }
 
     font {
+        family: "Roboto"
+        weight: Font.Light
         pixelSize: 88
     }
 

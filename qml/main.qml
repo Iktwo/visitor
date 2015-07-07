@@ -19,6 +19,17 @@ ApplicationWindow {
         source: "qrc:/images/background_" + Math.floor((Math.random() * 5) + 1)
     }
 
+    FontsLoader {
+        fonts: [
+            "Roboto-Black.ttf", "Roboto-BlackItalic.ttf", "Roboto-Bold.ttf",
+            "Roboto-BoldItalic.ttf", "Roboto-Italic.ttf", "Roboto-Light.ttf",
+            "Roboto-LightItalic.ttf", "Roboto-Medium.ttf", "Roboto-MediumItalic.ttf",
+            "Roboto-Regular.ttf", "Roboto-Thin.ttf", "Roboto-ThinItalic.ttf"
+        ]
+
+        pathToFonts: "qrc:/fonts/resources/fonts/"
+    }
+
     FocusScope {
         anchors.centerIn: parent
 

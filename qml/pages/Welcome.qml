@@ -24,6 +24,7 @@ FocusScope {
             capitalization: Font.AllUppercase
             weight: Font.Light
             pixelSize: 100
+            family: "Roboto"
         }
 
         horizontalAlignment: Text.AlignHCenter

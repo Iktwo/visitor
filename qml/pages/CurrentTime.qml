@@ -14,6 +14,7 @@ Item {
             font {
                 weight: Font.Light
                 pixelSize: 200
+                family: "Roboto"
             }
 
             color: "#ffffff"
@@ -25,6 +26,7 @@ Item {
             font {
                 weight: Font.Light
                 pixelSize: 80
+                family: "Roboto"
             }
 
             color: "#ffffff"

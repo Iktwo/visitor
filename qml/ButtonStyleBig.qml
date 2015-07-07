@@ -12,7 +12,13 @@ ButtonStyle {
         horizontalAlignment: Text.AlignHCenter
 
         text: control.text
-        font.pixelSize: 88
+
+        font {
+            pixelSize: 88
+            family: "Roboto"
+            weight: Font.Light
+        }
+
         color: "#fcfcfc"
     }
 

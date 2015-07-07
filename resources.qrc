@@ -8,6 +8,7 @@
         <file>qml/TextFieldStyleBig.qml</file>
         <file>qml/ButtonStyleBig.qml</file>
         <file>qml/FontsLoader.qml</file>
+        <file>qml/FormTextField.qml</file>
         <file>qml/NotificationBar.qml</file>
     </qresource>
     <qresource prefix="/images">

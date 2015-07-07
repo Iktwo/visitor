@@ -5,8 +5,8 @@ Item {
     property alias source: imageBackground.source
 
     function blur() {
-        fastBlur.opacity = 0.6
-        rectangleBlack.opacity = 0.3
+        fastBlur.opacity = 0.5
+        rectangleBlack.opacity = 0.5
     }
 
     function hideBlur() {
